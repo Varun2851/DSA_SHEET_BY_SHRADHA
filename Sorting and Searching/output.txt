@@ -1,5 +1,1 @@
-subarray found from index2to4
-subarray found from index2to6
-subarray found from index5to6
-subarray found from index6to9
-subarray found from index0to10
+0 8 9 1 -2 -1 5 4 3 2 6 7 
