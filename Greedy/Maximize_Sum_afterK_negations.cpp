@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
 
-	int arr[] = {9, 8, 8, 5};
+	int arr[] = {-2,-1,0,2,5};
 	int n = sizeof(arr)/sizeof(int);
 
 	int k = 3;
@@ -12,7 +12,7 @@ int main(){
 
 	int sum = 0;
 
-	int index = 0;
+	int index;
 
 	for(index = 0; index<n; index++){
 		if(k != 0 and arr[index] < 0){
@@ -35,15 +35,18 @@ int main(){
 		for(int i = 0; i<n; i++){
 			sum += arr[i];
 		}
+		cout<<sum;
+		return 0;
 	}
 
-	if(abs(arr[index]) > arr[index-1]){
+	if(abs(arr[index]) > abs(arr[index-1])){
 		index--;
 	}
 	arr[index] = -1*arr[index];
 
 	for(int i = 0; i<n; i++){
 		sum += arr[i];
+		
 	}
 
 	cout<<sum<<" ";
