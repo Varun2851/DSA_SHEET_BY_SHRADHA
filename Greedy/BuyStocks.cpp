@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int solve(int *arr , int amount,int n){
+int solve1(int *arr , int amount,int n){
 	vector<pair<int,int> >v;
 	int x = 1;
 	int y;
@@ -30,6 +30,6 @@ int main(){
 	int n = sizeof(arr)/sizeof(int);
 	int amount = 45;
 
-	cout<<solve(arr,amount,n);
+	cout<<solve1(arr,amount,n);
 	return 0; 
 }
