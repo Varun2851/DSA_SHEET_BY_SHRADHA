@@ -9,7 +9,7 @@ using namespace std;
 
 // Returns common element in all rows of mat[M][N]. If there is no
 // common element, then -1 is returned
-int findCommon(int mat[M][N])
+int findCommon1(int mat[M][N])
 {
 	// An array to store indexes of current last column
 	int column[M];
@@ -66,7 +66,7 @@ int main()
 		{ 3, 5, 7, 9, 11 },
 		{ 1, 3, 5, 7, 9 },
 	};
-	int result = findCommon(mat);
+	int result = findCommon1(mat);
 	if (result == -1)
 		cout << "No common element";
 	else
