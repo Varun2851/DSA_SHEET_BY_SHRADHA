@@ -38,3 +38,35 @@ public:
 
     }
 };
+
+//optimised way 
+
+#define node ListNode
+class Solution {
+public:
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        node*x = headA;
+        node*y = headB;
+
+        while(1){
+            if(x==y){
+                return x;
+            }
+
+            if(x==NULL){
+                x = headB;
+            }
+            else{
+                x = x->next;
+            }
+
+            if(y==NULL){
+                y = headA;
+            }
+            else{
+                y = y->next;
+            }
+        }
+        return NULL;
+    }
+};
